@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+}
+/******************barra de navegacion******************* */
+.header-main {
+    min-height: 70vh;
+}
+.index {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+/* a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+} */
+
+
+
+.titulo{
+    text-decoration: none;
+    color: red;
+    margin: 6px;
+}
+.navbar-nav a{
+    color: red;
+}
+.navbar-nav a:hover{
+    color: royalblue;
+}
+
+.nosotros p{
+    margin:0 0 0 20px;
+}
+.nosotros h1{
+    margin:0 0 20px 20px;
+    text-align: center;
+}
+
+    
+
+
+
+/* ****************mapa************* */
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+.ubicacion  p{
+    margin:  40px;
+    
+    
+} 
+
+
+/* **********footer*************** */
+.footer{
+    /* background-color: blueviolet; */
+    padding: 40px
+}
+.footer h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer p{
+    text-align: center;
+}
+.iconos_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.iconos_footer img{
+    width: 50px;
+    margin-left: 20px;
+}
