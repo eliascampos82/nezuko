@@ -42,6 +42,7 @@
     width: 100%;
     
 }
+
 .marca_texto{
     display: flex;
     flex-direction: column;
@@ -129,7 +130,6 @@
 
 
 
-
 /* *************whatsapp************** */
 .enlace_whatsapp{
     position: fixed;
@@ -143,10 +143,6 @@
     
 
 }
-
-
-
-
 
 /* *************separacion********** */
 .separacion{
@@ -246,6 +242,12 @@ h2{
 }
 .item-3:hover{
     flex: 8;
+}
+@media (max-width:480px) {
+    .gallery-wrap{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* 
