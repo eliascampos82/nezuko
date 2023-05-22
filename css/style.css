@@ -222,15 +222,15 @@ h2{
     transition: flex 0.8s ease;
 }    
 .item-1 { 
-    background-image: url("/img/galleria1.jpg");
+    background-image: url("../img/galleria1.jpg");
 }
 
 .item-2 { 
-    background-image: url("/img/galeria2.jpg");
+    background-image: url("../img/galeria2.jpg");
 }
 
 .item-3 { 
-    background-image: url("/img/galleria3.jpg");
+    background-image: url("../img/galleria3.jpg");
 }
     
 
@@ -250,8 +250,7 @@ h2{
     }
 }
 
-/* 
-**************footer*************** */
+/* **************footer*************** */
 
 .footer {
     /* background-color: blueviolet; */
