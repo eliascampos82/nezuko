@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Russo One', sans-serif;
+   
 } 
 /******************barra de navegacion******************* */
 .header-main {
@@ -15,18 +16,11 @@
     background-repeat: no-repeat;
 
 }
-/* a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-align: center;
-} */
-
-
 
 .titulo{
     text-decoration: none;
     color: red;
-    margin: 6px;
+    margin: 6px; 
 }
 .navbar-nav a{
     color: red;
@@ -41,6 +35,7 @@
     margin-top: 30px;
     width: 100%;
     
+    
 }
 
 .marca_texto{
@@ -48,28 +43,27 @@
     flex-direction: column;
     width: 100%;
     position: absolute;
-    margin: auto;
+    
     
 } 
 .airmax{
-    margin-top: 3px;
-    margin-left: 20px;
-    font-size: 2.3rem;
-    display: flex;
+    margin-top:-60px;
+    margin-left: 5px;
+    font-size: 4.1rem;
     position: absolute;
     z-index: 1;
     
 }
 #super{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     position: absolute;
     color: red;
-    display: flex;
+    
     z-index: 2;
     font-style: italic;
-    margin-top: 29px;
-    margin-left: 20px;
-    width: 20%;
+    margin-top:-5px;
+    margin-left: 30px;
+    
     
 }
 .marca_texto p{
@@ -83,14 +77,13 @@
 
 .imagen{
     position: relative;
-   width: 70%;
-   margin-left: 20%;
-   margin-top:-30px ;
+   width: 100%;
+   left: -5px;
+   margin-top:100px ;
    z-index: 0;
 } 
 
 /* *****************movil************** */
-
 @media (min-width:765px) {
     .airmax{
         color: blueviolet;
@@ -123,8 +116,42 @@
     .separacion{
         font-size: 50px;
     }
+    .imagen{
+        width: 100%;
+        left: 10%;
+        top: 20px;
+    }
 } 
-
+ 
+@media (min-width:1005px) {
+    .airmax{
+        color: blueviolet;
+        margin-top: 60px;
+        margin-left: 100px;
+        font-size: 6em;
+        display: flex;
+        
+    }
+    #super{
+        font-size: 4rem;
+        position: absolute;
+        color: red;
+        display: flex;
+        z-index: 2;
+        font-style: italic;
+        margin-top: 120px;
+        margin-left: 140px;
+        width: 20%;
+        
+    }
+    .imagen{
+        position: relative;
+       width: 70%;
+       margin-left: 20%;
+       margin-top:-20px ;
+       z-index: 0;
+    } 
+} 
 
 
 
@@ -148,34 +175,15 @@
 .separacion{
     margin-top:5% ;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.1rem;
     color: black;
 
 }
 /* **************card************* */
-
-.container_card{
-    position: relative;
-    display:flex ;
-    margin: 70px 20px 0 20px ;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-        
-}
-.card{
+.mas_vendidos{
     display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    text-align: center;
-    border-radius: 10px;
-    
-
-}
-.card img{
-    width: 280px;
-    margin: 5px 5px 30px 5px;
-    
-    
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* ****************galery************** */
@@ -193,8 +201,6 @@
     margin: 20px;
     text-transform: uppercase;
 }
-
-
 
 h2{
     position: relative;
@@ -275,9 +281,183 @@ h2{
     margin-left: 20px;
 }
 
+/* **********************************************NOSOTROS***************************************************************** */
+
+/* **************************texto************************ */
+.nosotros p{
+    margin:0 0 0 20px;
+}
+.nosotros h1{
+    margin:0 0 20px 20px;
+    text-align: center;
+}
+
+
+/* ****************mapa************* */
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+.ubicacion  p{
+    margin:  40px;
+    
+    
+} 
 
 
 
+/* ********************************************PRODUCTOS**************************************************************************** */
 
 
 
+/* ***********separacion************** */
+
+
+.separacion{
+    margin-top:30px ;
+    text-align: center;
+    font-size: 3rem;
+    
+
+}
+
+
+
+/* ***card_adidas****/
+
+.container_card_adidas{
+    display:flex ;
+    margin: 40px 20px 30px 20px ;
+    justify-content: space-between;
+    flex-wrap: wrap;
+        
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom:10px;
+    
+
+}
+.card h3{
+    bottom:0;
+
+}
+.card p span{
+    bottom: 0;
+}
+.card p{
+    margin: 0 10px 0 10px ;
+}
+
+.card img{
+    width: 200px;
+    /* margin: 5px 5px 30px 5px; */
+    margin: auto;    
+}
+
+
+/* *********************************************CLIENTES************************************************************* */
+.container-img{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+}
+.container-img .box-img figure{
+    width: 100%;
+    height: 100%;
+}
+.container-img .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-img .box-img:nth-child(1){
+    grid-column-start: span 2;
+}
+.container-img .box-img:nth-child(4){
+    grid-row-start: span 2;
+}
+@media screen and (max-width:800px){
+    .container-img{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+    .container-img .box-img:nth-child(1){
+        grid-column-start: span 1;
+    }
+}
+@media screen and (max-width:500px){
+    .container-img{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-img .box-img img{
+        height: 200px;
+    }
+}
+/* ********************************************PAGES/CONTACTO******************************************************** */
+
+
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(240, 4, 4, 0.974);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 20px;
+    
+  }
+  form h2{
+    color: rgb(249, 245, 245);
+    text-align: center;
+  }
+  input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+  }
+  textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  #boton{
+    background: #c8baba;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    
+  }
+  #boton:hover{
+    cursor:  pointer;
+    color: rgb(248, 248, 249);
+    background-color: rgb(91, 110, 232);
+  }
+  
+  @media (max-width:480px) {
+    form{
+      width: 100%;
+    }
+  }
