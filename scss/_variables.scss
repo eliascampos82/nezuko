@@ -10,4 +10,5 @@ $fuenteprincipal:"Russo One", sans-serif;
 @mixin alineacion-column-centrado{
     display:flex;
     align-items: center;
+    justify-content: center;
 }

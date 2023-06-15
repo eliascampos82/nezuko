@@ -1,48 +1,85 @@
+.nosotros {
+  margin: 0 30px;
+}
 .nosotros h1 {
   margin: 0 0 20px 20px;
   text-align: center;
 }
-
 .nosotros p {
   margin: 0 0 0 20px;
+}
+.nosotros h4 {
+  margin: 10px 20px;
 }
 
 .ubicacion {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 50px;
+  margin: 5% 50px;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
 }
 .ubicacion p {
   margin: 40px;
 }
+.ubicacion iframe {
+  left: 0;
+  top: 130px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
-.container_card_adidas {
+.productos {
   display: flex;
-  margin: 40px 20px 30px 20px;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: 0 25px;
 }
 
 .card1 {
   display: flex;
-  flex-direction: column;
-  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 15px;
+}
+.card1:hover {
+  box-shadow: 0px 5px 20px 9px rgb(34, 48, 246);
+  transform: scale(1.1);
+  z-index: 5;
+  border: 1px solid #C00;
+}
+.card1 .card-img-top {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card1 .card-body {
   text-align: center;
-  border-radius: 10px;
-  position: relative;
+}
+
+.card-text1 em {
+  background-color: red;
+  border-radius: 20px;
+  padding: 5px 20px;
   margin-bottom: 10px;
+  color: white;
 }
-.card1 h3 {
-  bottom: 0;
+.card-text1 em:hover {
+  color: white;
+  background-color: blue;
+  cursor: pointer;
 }
-.card1 p {
-  margin: 0 10px 0 10px;
-}
-.card1 img {
-  width: 200px;
-  margin: auto;
+
+.clientes {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .container-img {
@@ -97,7 +134,7 @@
     object-fit: cover;
   }
   .container-img .box-img img {
-    height: 200px;
+    height: 400px;
   }
 }
 form {
@@ -161,10 +198,19 @@ form #boton:hover {
   width: 100%;
 }
 
+.navbar-nav {
+  justify-content: center;
+  align-items: center;
+}
+
 .titulo {
   text-decoration: none;
   color: red;
   margin: 6px;
+}
+
+.navbar-toggler {
+  background-color: red;
 }
 
 .navbar-nav a {
@@ -183,7 +229,7 @@ form #boton:hover {
 
 .airmax {
   margin-top: -60px;
-  margin-left: 5px;
+  margin-left: 25px;
   font-size: 4.1rem;
   position: absolute;
   z-index: 1;
@@ -248,7 +294,7 @@ form #boton:hover {
   }
   .imagen {
     width: 100%;
-    left: 10%;
+    left: -2%;
     top: 20px;
   }
 }
@@ -286,11 +332,11 @@ form #boton:hover {
   z-index: 8;
 }
 .enlace_whatsapp .logo_whatsapp {
-  width: 50px;
+  width: 60px;
 }
 
 .separacion {
-  margin-top: 5%;
+  margin: 5% 0;
   text-align: center;
   font-size: 3rem;
   color: black;
@@ -299,21 +345,43 @@ form #boton:hover {
 
 .mas_vendidos {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 0 15px;
+  margin: 0 25px;
 }
 
 .card {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  justify-content: center;
+  margin: 10px 15px;
 }
 .card .card-img-top {
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.card .card-body {
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.1);
+  border: 3px solid rgb(172, 165, 165);
+}
+
+.card-text1 em {
+  background-color: red;
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+.card-text1 em:hover {
+  color: white;
+  background-color: blue;
+  cursor: pointer;
 }
 
 .container {
@@ -323,7 +391,6 @@ form #boton:hover {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-left: 10px;
 }
 .container p {
   margin: 20px;
@@ -382,16 +449,56 @@ form #boton:hover {
     flex-direction: column;
   }
 }
+.promo_h2 {
+  margin: 5% 0;
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+  text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
+}
+
+.promo {
+  display: flex;
+}
+.promo img {
+  width: 50%;
+}
+
+@media (max-width: 480px) {
+  .promo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .promo img {
+    width: 80%;
+  }
+  .promo_h2 {
+    font-size: 2rem;
+  }
+}
 .footer {
   padding: 40px;
+  position: relative;
+  bottom: 0;
+  background-color: rgb(0, 2, 2);
+  margin-top: 10%;
+}
+.footer .comunicate {
+  color: red;
+  text-transform: uppercase;
 }
 .footer h3 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: rgb(22, 6, 252);
 }
 .footer p {
   text-align: center;
+  color: rgb(107, 116, 242);
+  letter-spacing: 5px;
 }
 
 .iconos_footer {
@@ -399,9 +506,68 @@ form #boton:hover {
   align-items: center;
   justify-content: center;
 }
-.iconos_footer img {
-  width: 50px;
-  margin-left: 20px;
+.iconos_footer a i {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 12px;
+  }
+}
+.marcas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+}
+.marcas .marcas_1 {
+  display: flex;
+  margin: 50px 30px;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+.marcas .marcas_1 img {
+  width: 30%;
+  margin: 20px;
+}
+.marcas .marcas_2 {
+  display: flex;
+  margin: 50px 30px;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+.marcas .marcas_2 img {
+  width: 30%;
+  margin: 0 20px;
+}
+.marcas h2 {
+  margin: 40px;
+  color: red;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+@media (max-width: 900px) {
+  .marcas {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    align-items: center;
+  }
+  .marcas img {
+    width: 60%;
+  }
+  .marcas h2 {
+    margin: auto;
+    font-size: 2rem;
+  }
+  .marcas .marcas_1, .marcas .marcas_2 {
+    width: 40%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,17 +1,40 @@
-.nosotros h1{
-    margin:0 0 20px 20px;
-    text-align: center;
-    
-}  
-.nosotros p{
-margin:0 0 0 20px; 
-}  
+.nosotros{
+    margin: 0 30px;
+
+    h1{
+        margin:0 0 20px 20px;
+        text-align: center;
+        
+    } 
+    p{
+        margin:0 0 0 20px; 
+        
+        } 
+    h4{
+        margin: 10px 20px;
+        
+    }    
+}
+
+ 
+  
 .ubicacion{
 @include alineacion-column-centrado;
 flex-direction: column;
 text-align: center;
-margin: 50px;
+margin:5% 50px;
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+
 p{
     margin:  40px;
+}
+iframe{
+    left:0;
+    top:130px;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 }

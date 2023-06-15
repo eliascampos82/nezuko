@@ -26,13 +26,19 @@
 
     }
 }
-
+.navbar-nav{
+    justify-content: center;
+    align-items: center;
+}
 .titulo {
     text-decoration: none;
     color: $colorrojo;
     margin: 6px; 
 }
-
+.navbar-toggler{
+    background-color: red;
+    
+}
 .navbar-nav a{
     color:$colorrojo;
     &:hover{
@@ -51,7 +57,7 @@
 
 .airmax{
     margin-top:-60px;
-    margin-left: 5px;
+    margin-left: 25px;
     font-size: 4.1rem;
     position: absolute;
     z-index: 1;
@@ -119,7 +125,7 @@
     }
     .imagen{
         width: 100%;
-        left: 10%;
+        left: -2%;
         top: 20px;
     }
 } 
@@ -163,12 +169,12 @@
 
 
     .logo_whatsapp{
-        width: 50px;
+        width: 60px;
     }
 }
 // *************separacion********** */
 .separacion{
-    margin-top:5% ;
+    margin:5% 0 ;
     text-align: center;
     font-size: 3rem;
     color: black;
@@ -177,22 +183,42 @@
 }
 //**************card*************
 .mas_vendidos{
-    display: flex;
-    justify-content: space-between;
+    @include alineacion-column-centrado;
     flex-wrap: wrap;
-    margin: 0 15px;
+    margin: 0 25px;
  
 };
 .card{
     @include alineacion-column-centrado;
-    margin-top: 10px;
+    margin:10px 15px;
     .card-img-top{
         width: 80%;
         @include alineacion-column-centrado;
-        justify-content: center;
+        
     };
+    .card-body{
+        text-align: center;
+        
+    }
+    &:hover{
+        transform: scale(1.1);
+        border: 3px solid rgb(172, 165, 165)
+    }
 };
-
+.card-text1 em{
+    
+    background-color: red;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    color: white;
+    &:hover{
+        color: white;
+        background-color: blue;
+        cursor: pointer;
+   }
+      
+}
 
 
 //****************galery**************
@@ -200,10 +226,10 @@
 .container{
     padding: 75px 0;
     @include alineacion-column-centrado;
-    justify-content: center;
+    
     flex-direction: column;
     width: 100%;
-    margin-left: 10px;
+    
 
     p{
         margin: 20px;
@@ -261,26 +287,139 @@
         flex-direction: column;
     }
 }
+
+//**************banner******************************
+.promo_h2{
+    margin:5% 0 ;
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    text-shadow: $sombrastextos;
+}
+
+.promo{
+    display: flex;
+    img{
+        width: 50%;
+    }
+}
+
+@media (max-width:480px) {
+    .promo{
+        @include alineacion-column-centrado;
+        flex-direction: column;
+        img{
+            width: 80%;
+        }
+
+    }  
+    .promo_h2{
+        font-size: 2rem;
+    } 
+}
+
+
 //*******footer***********
 
 .footer{
     padding: 40px ;
-
+    position: relative;
+    bottom: 0;
+    background-color: rgb(0, 2, 2);
+    //margin:10px 50%;
+    margin-top: 10%;
+    .comunicate{
+        color: red;
+        text-transform: uppercase;
+    }
     h3{
-        text-align: center;
+       text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
-    };
+        color: rgb(22, 6, 252)
+    }
     p{
+        //font-family: Arial, Helvetica, sans-serif;
         text-align: center;  
+        color: rgb(107, 116, 242);
+        letter-spacing: 5px;
     };
 }
 .iconos_footer{
     @include alineacion-column-centrado;
-    justify-content: center;
-    img{
-        width: 50px;
-        margin-left: 20px;
+    
+    a i{
+        margin-left: 30px;
+        margin-bottom: 30px;
 
+    }
+    
+}
+@media (max-width:480px) {
+    .footer{
+        font-size: 12px;
+    }
+}
+//***************marcas separacion**************************
+
+
+.marcas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 30px;
+    .marcas_1 {
+        display: flex;
+        margin: 50px 30px;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 30%;
+            margin: 20px;
+        }
+    }
+    .marcas_2 {
+        display: flex;
+        margin: 50px 30px;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 30%;
+            margin: 0 20px;
+        }
+    }    
+    h2{
+        margin: 40px;
+        color: red;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
+
+@media (max-width:900px) {
+    .marcas{
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+        align-items: center;
+        img{
+            width: 60%;
+        }
+
+        h2{
+            margin: auto;
+            font-size: 2rem;
+        }
+        .marcas_1,.marcas_2{
+            width: 40%;
+        }
     }
 }
