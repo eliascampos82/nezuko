@@ -77,6 +77,25 @@
   cursor: pointer;
 }
 
+.arriba {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arriba a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 8px;
+  width: 20%;
+  color: rgb(253, 5, 5);
+}
+.arriba a:hover {
+  color: rgb(12, 3, 247);
+}
+
 .clientes {
   text-align: center;
   margin-top: 20px;
@@ -478,6 +497,24 @@ form #boton:hover {
     font-size: 2rem;
   }
 }
+.arriba {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arriba a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 8px;
+  color: rgb(253, 5, 5);
+}
+.arriba a:hover {
+  color: rgb(12, 3, 247);
+}
+
 .footer {
   padding: 40px;
   position: relative;
