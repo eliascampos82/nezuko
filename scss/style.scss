@@ -317,21 +317,7 @@
         font-size: 2rem;
     } 
 }
-//****************flecha*************************
-.arriba{
-    @include alineacion-column-centrado;
-    a{
-        @include alineacion-column-centrado;
-        border-radius: 20px;
-        margin-top: 50px;
-        padding: 8px;
-        
-        color: rgb(253, 5, 5);
-        &:hover{
-            color: rgb(12, 3, 247);
-        }
-    }
-}
+
 //*******footer***********
 
 .footer{

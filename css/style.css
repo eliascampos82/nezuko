@@ -87,13 +87,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 8px;
-  width: 20%;
-  color: rgb(253, 5, 5);
+  color: #C00;
 }
 .arriba a:hover {
-  color: rgb(12, 3, 247);
+  color: rgb(3, 11, 247);
 }
 
 .clientes {
@@ -497,24 +496,6 @@ form #boton:hover {
     font-size: 2rem;
   }
 }
-.arriba {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.arriba a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  margin-top: 50px;
-  padding: 8px;
-  color: rgb(253, 5, 5);
-}
-.arriba a:hover {
-  color: rgb(12, 3, 247);
-}
-
 .footer {
   padding: 40px;
   position: relative;

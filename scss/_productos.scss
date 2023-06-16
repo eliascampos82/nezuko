@@ -41,18 +41,18 @@
 }
 
 .arriba{
+    
     @include alineacion-column-centrado;
     a{
-        @include alineacion-column-centrado;
-        border-radius: 20px;
-        margin-top: 20px;
+    @include alineacion-column-centrado;
+       border-radius: 20px;
+        margin-top: 30px;
         padding: 8px;
-        width: 20%;
-        color: rgb(253, 5, 5);
+        color: #C00;
         &:hover{
-            color: rgb(12, 3, 247);
-        }
+            color: rgb(3, 11, 247);
+       }
     }
-   
+    
 }
 
